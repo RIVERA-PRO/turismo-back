@@ -43,25 +43,25 @@ const schema = Joi.object({
     cover_photo1: Joi
         .string()
         .min(0)
-        .uri()
+
         .messages(
             {
                 'string.min': 'La foto debe tener al menos 8 caracteres',
                 'string.empty': 'La foto no puede estar vacía',
                 'any.required': 'Se requiere una foto',
-                'string.uri': 'Se necesita una URL válida'
+
             }
         ),
     cover_photo2: Joi
         .string()
         .min(0)
-        .uri()
+
         .messages(
             {
                 'string.min': 'La foto debe tener al menos 8 caracteres',
                 'string.empty': 'La foto no puede estar vacía',
                 'any.required': 'Se requiere una foto',
-                'string.uri': 'Se necesita una URL válida'
+
             }
         ),
     cover_photo3: Joi
