@@ -4,7 +4,7 @@ import User from "../../models/User.js";
 const gastronomias = {
     create: async (req, res, next) => {
         try {
-            const { cover_photo, mail, photo, name, categoria, description, ubicacion, title, user_id } = req.body;
+            const { cover_photo, mail, photo, name, categoria, description, ubicacion, title, tipo, user_id } = req.body;
             const user = await User.findById(user_id);
 
             if (!user) {
@@ -16,6 +16,7 @@ const gastronomias = {
 
             const gastronomia = await Gastronomia.create({
                 cover_photo,
+                tipo,
                 title,
                 ubicacion,
                 description,

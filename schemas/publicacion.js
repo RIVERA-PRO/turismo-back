@@ -115,6 +115,10 @@ const schema = Joi.object({
     user_id: Joi
         .objectId()
         .required(),
+    tipo: Joi
+        .string()
+
+    ,
 
 })
 

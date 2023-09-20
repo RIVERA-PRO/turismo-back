@@ -15,6 +15,7 @@ let schema = new mongoose.Schema(
     title: { type: String, required: true },
     ubicacion: { type: String, required: true },
     categoria: { type: String, required: true },
+    tipo: { type: String, required: true },
 
 
   }, {
